@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useNavigate } from "react-router-dom"
+
 import "../style/register.css"
 
 const Register = () => {
@@ -6,15 +8,20 @@ const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
+      ;
 
-    console.log({
-      username,
-      email,
-      password
-    });
+   const user = {
+    username,
+    email,password:btoa(password)
+   }
+
+   localStorage.setItem("user",JSON.stringify(user));
+   alert("Registerd Successfully");
+   navigate("/login")
   };
 
   return (
@@ -28,6 +35,7 @@ const Register = () => {
           type="text"
           value={username}
           placeholder="Enter username"
+          required
           onChange={(e) => setUsername(e.target.value)}
         />
 
@@ -36,6 +44,7 @@ const Register = () => {
           type="email"
           value={email}
           placeholder="Enter Email"
+          required
           onChange={(e) => setEmail(e.target.value)}
         />
 
@@ -44,6 +53,7 @@ const Register = () => {
           type="password"
           value={password}
           placeholder="Enter Password"
+          required
           onChange={(e) => setPassword(e.target.value)}
         />
 
