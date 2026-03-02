@@ -16,7 +16,8 @@ const Register = () => {
 
    const user = {
     username,
-    email,password:btoa(password)
+    email,password:btoa(password),
+    role: email === "admin@origin.com" ? "admin" : "user"
    }
 
    localStorage.setItem("user",JSON.stringify(user));
