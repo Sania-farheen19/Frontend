@@ -8,20 +8,14 @@ import Home from './pages/LandingPage';
 import LandingPage from './pages/LandingPage';
 import AdminDashboard from './pages/Dashboard/AdminDashboard';
 import UserDashboard from './pages/Dashboard/UserDashboard';
+import AppRoutes from "./routes/AppRoutes.jsx"
 
 const App = () => {
 
   return (
     <div>
       
-      <Routes>
-      <Route path="/" element={<LandingPage/>} />
-       
-      <Route path="/register" element={<Register />} />
-      <Route path="/login" element={<Login />} />
-       <Route path="/admin-dashboard" element={<AdminDashboard />} />
-  <Route path="/user-dashboard" element={<UserDashboard />} />
-    </Routes>
+     <AppRoutes/>
     </div>
   )
 }

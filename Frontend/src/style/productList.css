@@ -1,0 +1,35 @@
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 30px;
+    
+
+}
+.product-card{
+     border: 2px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-card h3{
+    font-size: larger;
+}
+.product-card p{
+    color:green;
+}
+.product-card span{
+    color: maroon;
+}
+.product-card img{
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    object-fit: cover;
+    margin-bottom: 10px;
+   
+}

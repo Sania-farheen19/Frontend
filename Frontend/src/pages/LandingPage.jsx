@@ -11,6 +11,8 @@ const LandingPage = () => {
         <h2 className='nav-logo'>Origin</h2>
          <ul className='nav-list'>
           <li onClick={() => navigate("/")}>Home</li>
+          <li onClick={() => navigate("products")}>Show products</li>
+
           <li onClick={() => navigate("/about")}>About</li>
           <li onClick={() => navigate("/register")}>Register</li>
           <li onClick={() => navigate("/login")}>Login</li>
