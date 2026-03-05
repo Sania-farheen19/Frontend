@@ -141,7 +141,7 @@ const defaultProducts = [
   },
   {
     id: 18,
-    name: "Cycle",
+    name: "Bicycle",
     price: 2800,
     stock: 13,
     image:
