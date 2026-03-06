@@ -12,6 +12,7 @@ export const Login = () => {
     console.log({ email, password });
 
     const storedData = JSON.parse(localStorage.getItem("user"));
+    localStorage.setItem("currentUser",JSON.stringify(storedData))
 
     if (
       storedData &&

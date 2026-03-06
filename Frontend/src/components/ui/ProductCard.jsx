@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product ,isAdmin,onDelete}) => {
   return (
     <div className="product-card">
       <img
@@ -14,6 +14,11 @@ const ProductCard = ({ product }) => {
       <p>Price: ₹{product.price}</p>
 
       <span>Stock: {product.stock}</span>
+      <br />
+
+      {isAdmin && (<button className="delete-btn" onClick={()=>onDelete(product.id)}>
+Delete
+      </button>)}
     </div>
   );
 };

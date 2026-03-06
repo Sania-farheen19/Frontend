@@ -25,7 +25,7 @@ const AppRoutes = () => {
 {/* products routes */}
     <Route path="/products" element = {<ProductList/>}/>
     <Route path="/products/add" element = {<AddProduct/>}/>
-    <Route path="/products/edit:id" element = {<EditProduct/>}/>
+    <Route path="/products/edit/:id" element = {<EditProduct/>}/>
     <Route path="/products/delete:id" element = {<DeleteProduct/>}/>
 </Routes>
   )

@@ -1,8 +1,15 @@
 import React from 'react'
+import ProductList from '../Products/ProductList'
 
 const UserDashboard = () => {
+  
   return (
-    <div>UserDashboard</div>
+    <div>
+      <h1>User Dashboard</h1>
+      <div>
+        <ProductList/>
+      </div>
+    </div>
   )
 }
 

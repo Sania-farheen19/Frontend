@@ -177,8 +177,18 @@ const getProducts = ()=>{
   return JSON.parse(data)
 }
 
+// function for deletion
+
+const deleteProduct = (id)=>{
+  const products = getProducts();
+  const updatedProducts = products.filter((p)=> p.id !== id);{
+    saveProducts(updatedProducts);
+    return updatedProducts;
+  }
+}
+
 const saveProducts = (products)=>{
   localStorage.setItem(STORAGE_KEY,JSON.stringify(products))
 }
 
-export {getProducts,saveProducts}
+export {getProducts,saveProducts,deleteProduct}
