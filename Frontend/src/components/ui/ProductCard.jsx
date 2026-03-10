@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ product ,isAdmin,onDelete}) => {
+
+  const navigate = useNavigate()
   return (
     <div className="product-card">
       <img
@@ -16,9 +19,15 @@ const ProductCard = ({ product ,isAdmin,onDelete}) => {
       <span>Stock: {product.stock}</span>
       <br />
 
-      {isAdmin && (<button className="delete-btn" onClick={()=>onDelete(product.id)}>
+      {isAdmin && (
+
+        <div className="btn-div">
+          <button className="edit-btn" onClick={() => navigate(`/products/edit/${product.id}`)} >Edit</button>
+        
+        <button className="delete-btn" onClick={()=>onDelete(product.id)}>
 Delete
-      </button>)}
+      </button>
+          </div>)}
     </div>
   );
 };

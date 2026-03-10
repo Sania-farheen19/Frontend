@@ -12,6 +12,7 @@ import EditProduct from "../pages/Products/EditProduct";
 import ProductList from "../pages/Products/ProductList";
 
 import React from 'react'
+import AdminRoute from "./AdminRoute";
 
 const AppRoutes = () => {
   return (
@@ -20,7 +21,9 @@ const AppRoutes = () => {
        
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
-       <Route path="/admin-dashboard" element={<AdminDashboard />} />
+       <Route path="/admin-dashboard" element={<AdminRoute>
+        <AdminDashboard />
+       </AdminRoute>} />
   <Route path="/user-dashboard" element={<UserDashboard />} />
 {/* products routes */}
     <Route path="/products" element = {<ProductList/>}/>

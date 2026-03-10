@@ -29,9 +29,10 @@ export const Login = () => {
     }
   };
   return (
-    <div className="login-container">
-      <h1 className="login-title">Login</h1>
-      <form onSubmit={handleSubmit} className="login-form">
+    <div className="page-container">
+     <div className="form-container">
+       <h1 className="form-title">Login</h1>
+      <form onSubmit={handleSubmit} className="form">
         <label>Email:</label>
         <input
           type="email"
@@ -46,12 +47,14 @@ export const Login = () => {
           type="password"
           placeholder="Enter password"
           value={password}
+          autoComplete="current-password"
           onChange={(e) => setPassword(e.target.value)}
           required
         />
 
-        <button type="submit">Login</button>
+        <button className="btn" type="submit">Login</button>
       </form>
+     </div>
     </div>
   );
 };

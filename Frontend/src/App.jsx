@@ -9,6 +9,7 @@ import LandingPage from './pages/LandingPage';
 import AdminDashboard from './pages/Dashboard/AdminDashboard';
 import UserDashboard from './pages/Dashboard/UserDashboard';
 import AppRoutes from "./routes/AppRoutes.jsx"
+import "./style/global.css";
 
 const App = () => {
 

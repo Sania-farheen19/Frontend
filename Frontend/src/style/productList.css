@@ -1,5 +1,5 @@
-.product-page {
-  padding: 20px 40px;
+.product-list-page {
+  padding: 20px 30px;
 }
 .product-header {
   display: flex;
@@ -8,22 +8,44 @@
   margin-bottom: 30px;
 }
 
+
+
 .product-header h1 {
   text-align: center;
   font-size: 40px;
   margin-top: 10px;
   font-family: "Times New Roman", Times, serif;
 }
-.add-btn {
-  padding: 10px 18px;
+.product-header-items{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+
+.add-product-btn{
+   padding: 10px 8px;
   background-color: #ffcd76;
   border: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
+
 }
-.add-btn:hover {
+.add-product-btn:hover {
   background-color: #f69c02;
+}
+
+.search-container{
+  /* margin-bottom:20px; */
+}
+
+.search-input{
+  padding:10px;
+  width:250px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  font-size:14px;
 }
 .product-list {
   display: grid;
@@ -58,6 +80,11 @@
   object-position: center;
   border-radius: 8px;
 }
+.btn-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .delete-btn{
   margin-top:10px;
   padding:6px 12px;
@@ -66,6 +93,20 @@
   color:white;
   cursor:pointer;
   border-radius:5px;
+}
+.edit-btn{
+    margin-top:10px;
+  padding:6px 12px;
+  border:none;
+  background:rgb(255, 142, 43);
+  color:white;
+  cursor:pointer;
+  border-radius:5px;
+
+}
+.edit-btn:hover{
+   background:rgb(220, 108, 11);
+
 }
 
 .delete-btn:hover{

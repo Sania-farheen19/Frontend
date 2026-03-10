@@ -1,0 +1,41 @@
+.footer{
+  background:#111;
+  color:white;
+  padding:40px 20px;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+.footer-section{
+  margin:10px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links a{
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+.footer-section p{
+    color: gray;
+}
+
+.footer-section h3,
+.footer-section h4{
+  margin-bottom:15px;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:50px;
+  border-top:1px solid gray;
+  padding-top:5px;
+}

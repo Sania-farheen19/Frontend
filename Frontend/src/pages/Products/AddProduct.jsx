@@ -42,17 +42,17 @@ const AddProduct = () => {
 
   }
   return (
-    <div className='outer-container'>
-      <div className='add-product-container'>
-      <h2>
+    <div className='page-container'>
+      <div className='form-container'>
+      <h2 className='form-title'>
       Add Product</h2>
-      <form onSubmit={handleSubmit} className='add-form'>
+      <form onSubmit={handleSubmit} className='form'>
 
       <label >Product Name:</label>  <input type="text" name="name" placeholder='Product Name' required onChange={handleChange} />
        <label >Price:</label> <input  name="price" placeholder='Price' required onChange={handleChange}/>
        <label >Stock:</label> <input type="text" name="stock" placeholder='Stock' required onChange={handleChange}/>
        <label >Image URL:</label> <input type="text" name="image" placeholder='Img URL' required onChange={handleChange} />
-        <button type='submit'> Add Product</button>
+        <button className='btn' type='submit'> Add Product</button>
 
       </form>
       </div>
